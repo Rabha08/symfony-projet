@@ -40,7 +40,6 @@ class HomeController extends AbstractController
         $Rabhac= new Person();
         $RabhacForm=$this->createForm(PersonType::class,$Rabhac);
         return $this->render(view: 'home/displayForm.html.twig',parameters: [
-        
         "form"=>$RabhacForm
          ]);
      }
